@@ -1,0 +1,12 @@
+storefront:
+  image:
+    ets04uga/jboss:eap-5.1.2
+  links:
+    - search
+    - database
+search:
+  image:
+    ets04uga/endeca:3.1.1
+database:
+  image:
+    alexeiled/docker-oracle-xe-11g

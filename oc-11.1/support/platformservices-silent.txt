@@ -1,0 +1,5 @@
+8888
+8090
+Y
+/usr/local/endeca/MDEX/6.5.1
+Y
