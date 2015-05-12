@@ -1,6 +1,6 @@
 storefront:
   image:
-    ets04uga/jboss:eap-5.1.2
+    ets04uga/atg:10.1.2
   links:
     - search
     - database

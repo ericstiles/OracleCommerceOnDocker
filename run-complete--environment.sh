@@ -1,5 +1,5 @@
 #! /bin/sh
 
-YML_FILE=./docker-compose.yml
+YML_FILE='./docker-compose.yml'
 
-docker-compose up $YML_FILE 
+docker-compose -f $YML_FILE --verbose up
