@@ -113,7 +113,14 @@ docker run -d -p 2222:22  -p 8006:8006 -p 8888:8888 -p 15000:15000 -p 15002:150
 
 ## XE Database
 
-See the README notes on the xe database.  I'm using an existing image.
+See the README notes on the xe database in the xe folder.  I'm using an existing image.
+
+# Docker Compose
+
+There is a docker compose file that will start the following three images.  I am still in the process of getting these integrated as a fully tested solution.
+* storefront
+* search
+* database
 
 # Various
 
