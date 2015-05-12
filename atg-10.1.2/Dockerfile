@@ -34,10 +34,10 @@ RUN chmod -R 755 $SCRIPT_DIR
 ADD $LOCAL_TOOLS/V35852-01.zip $BASE_TMP_PACKAGE_INSTALL/V35852-01.zip
 
 # unzip oracle zip file for ATG to ATG10.1.2_200RCN.bin
-RUN unzip $BASE_TMP_PACKAGE_INSTALL/V35852-01.zip -p $BASE_TMP_INSTALL
+RUN unzip $BASE_TMP_PACKAGE_INSTALL/V35852-01.zip -d $BASE_TMP_INSTALL
 
 # make ATG10.1.2_200RCN.bin executable for install
-chmod +x BASE_TMP_INSTALL/ATG10.1.2_200RCN.bin
+RUN chmod +x $BASE_TMP_INSTALL/ATG10.1.2_200RCN.bin
 
 #######################################
 # DONE
