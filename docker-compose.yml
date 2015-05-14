@@ -1,12 +1,30 @@
 storefront:
   image:
     ets04uga/atg:10.1.2
+  ports:
+    - "2222:22"
+    - "9080:8080"
+    - "9443:8443"
+    - "9060:8860"
+    - "9050:8850"
+    - "9810:8810"
+    - "9815:8815"
+    - "10010:9010"
+    - "10012:9012"
   links:
     - search
     - database
 search:
   image:
     ets04uga/endeca:3.1.1
+  ports:
+    - "2223:22"
+    - "8500:8500"
+    - "8888:8888"
 database:
   image:
     alexeiled/docker-oracle-xe-11g
+  ports:
+    - "49160:22"
+    - "49161:1521"
+    - "49162:8080"

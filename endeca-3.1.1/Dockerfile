@@ -174,4 +174,6 @@ RUN rm -rf $BASE_TMP_ENDECA_INSTALL
 RUN rm setup*.sh
 
 EXPOSE 22
+EXPOSE 8500
+EXPOSE 8888
 CMD ["/run.sh"]

@@ -2,4 +2,7 @@
 
 YML_FILE='./docker-compose.yml'
 
-docker-compose -f $YML_FILE --verbose up
+# Need to start existing containers, otherwise create new.
+
+docker-compose -f $YML_FILE start
+

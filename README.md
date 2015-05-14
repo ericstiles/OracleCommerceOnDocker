@@ -18,7 +18,7 @@ Docker is....  A container, not a VM
 
 # Components
 
-For those with access the Oracle files can be downloaded from https://edelivery.oracle.com.
+For those with access the Oracle files can be downloaded from https://edelivery.oracle.com.  The jdbc driver is available through http://oracle.com.
 
 I don't have a location to get the JBoss files other than http://redhat.com.
 
@@ -29,6 +29,8 @@ JBoss EAP 5.1.2 is used.
 ## ATG / Oracle Commerce
 
 The ATG install will use the images that has JBoss installed on it.
+
+The oracle jdbc driver (ojdbc6.jar) is also installed from the tools/ folder.
 
 ## Endeca
 

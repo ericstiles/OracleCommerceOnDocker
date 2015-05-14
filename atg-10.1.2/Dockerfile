@@ -40,6 +40,10 @@ RUN unzip $BASE_TMP_PACKAGE_INSTALL/V35852-01.zip -d $BASE_TMP_INSTALL
 RUN chmod +x $BASE_TMP_INSTALL/ATG10.1.2_200RCN.bin
 
 #######################################
+# copy jdbc driver to jboss location
+ADD $LOCAL_TOOLS/ojdbc6.jar /appl/jboss-eap-5.1.2/jboss-as/lib/ojdbc6.jar
+
+#######################################
 # DONE
 
 ENV AUTHORIZED_KEYS **None**
