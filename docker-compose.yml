@@ -3,6 +3,7 @@ storefront:
     ets04uga/atg:10.1.2
   ports:
     - "2222:22"
+# The following are storefront ports
     - "9080:8080"
     - "9443:8443"
     - "9060:8860"
@@ -11,6 +12,15 @@ storefront:
     - "9815:8815"
     - "10010:9010"
     - "10012:9012"
+# The following are publishing ports
+    - "11012:9112"
+    - "9180:8180"
+    - "9543:8543"
+    - "9860:9860"
+    - "9850:9850"
+    - "8910:8910"
+    - "8915:8915"
+    - "9110:9110"
   links:
     - search
     - database
@@ -21,6 +31,7 @@ search:
     - "2223:22"
     - "8500:8500"
     - "8888:8888"
+
 database:
   image:
     alexeiled/docker-oracle-xe-11g
